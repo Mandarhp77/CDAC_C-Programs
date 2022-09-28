@@ -11,16 +11,18 @@ int main(){
 
     len= strlen(a);
     
-    for(int i=0, j=len-1; i<=len; i++,j--){
-        if(a[i] == a[j--]){
+    for(int i=0, j=len-1; i<len; i++,j--){
+        if(a[i] != a[j]){
             flag = 1;
-            // break;
+            break;
+        }else{
+            flag=0;
         }
     }
 
     if(flag==1){
-        printf("Palindrome");
-    }else{
         printf("Not a Palindrome");
+    }else{
+        printf("Palindrome");
     }
 }

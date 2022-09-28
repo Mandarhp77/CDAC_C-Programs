@@ -21,9 +21,10 @@ int main(){
     int j=0;
     
     while(i<len1 || j<len2){
-        if(a[i]==b[j])
+        if(a[i]!=b[j])
         {   //for comparision of each elements in string
-            flag=1;   
+            flag=1;
+            break;   
         }else
         {
             flag =0;    
@@ -33,10 +34,10 @@ int main(){
     }
 
     if(flag==1){    
-         printf("Entered strings are same");       // To check flag value
+         printf("Entered strings are different");       // To check flag value
     }
     else{
-        printf("Entered strings are different");
+        printf("Entered strings are same");
        
     }
 }
