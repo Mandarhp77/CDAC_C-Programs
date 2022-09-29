@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main(){
     int a[5]={1,2,10,4,50};
-    int temp=a[4];
+    int temp=0;
 
     for(int i=0; i<5; i++){
         if(a[i]>temp){
