@@ -11,15 +11,11 @@ int main(){
             area = 3.14*(radius*radius);
             printf("Area of Circle is%f", area);
 
-        
-
         case 2:
             printf("Enter the side length");
             scanf("%f", &side);
             area = side*side;
             printf("Area of square is%f", area);
-
-        
 
         case 3:
             printf("Enter the Length and Width");
@@ -33,9 +29,5 @@ int main(){
             area = 0.5*Base*Height;
             printf("Area of Triangle is%f", area);
 
-
-
-
-        
     }
 }
